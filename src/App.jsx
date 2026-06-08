@@ -4,13 +4,15 @@ import About from "../src/Pages/About.jsx";
 import Services from "../src/Pages/Services.jsx";
 import Pricing from "../src/Pages/Pricing.jsx";
 import Contact from "../src/Pages/Contact.jsx";
+// Logo
+import Logo from "../public/Logo_Dark.png";
 import "./App.css";
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <div className="navDiv">
-          <img src="src/assets/Logo & HeroImage/Logo_Dark.png" id="Logo" />
+          <img src={Logo} id="Logo" alt="OutSourse Logo" />
 
           <Link to={"/"} className="navLink">
             Home
