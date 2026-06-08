@@ -15,7 +15,7 @@
   padding: 40px 20px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("public/Hero image.jpg") center/cover no-repeat;
+    url("/Hero image.jpg") center/cover no-repeat;
   border-radius: 20px;
 }
 
