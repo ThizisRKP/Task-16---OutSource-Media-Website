@@ -1,7 +1,7 @@
 .home {
   width: 100%;
   min-height: 100vh;
-  background-color: #F9DFDF;
+  background-color: #f9dfdf;
 }
 
 /* HERO SECTION */
@@ -15,7 +15,7 @@
   padding: 40px 20px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("\src\assets\Hero image.jpg") center/cover no-repeat;
+    url("src/assets/Logo & HeroImage/Hero image.jpg") center/cover no-repeat;
   border-radius: 20px;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .heroContent p {
-  color: #FFF;
+  color: #fff;
   font-size: 1.4rem;
   line-height: 1.8;
   max-width: 1200px;

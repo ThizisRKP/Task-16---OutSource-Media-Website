@@ -10,7 +10,7 @@ export default function App() {
     <>
       <BrowserRouter>
         <div className="navDiv">
-          <img src="..\src\assets\Logo_Dark.png" id="Logo" />
+          <img src="src/assets/Logo & HeroImage/Logo_Dark.png" id="Logo" />
 
           <Link to={"/"} className="navLink">
             Home
