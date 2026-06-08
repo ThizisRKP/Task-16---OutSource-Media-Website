@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: #f9dfdf;
+}
+
+/* HERO SECTION */
+
+.heroSection {
+  padding: 90px 0px;
+  text-align: center;
+  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85));
+  color: white;
+}
+
+.heroSection h1 {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.heroSection p {
+  max-width: 1000px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #e2e8f0;
+  text-align: justify;
+  margin-bottom: 12px;
+}
+
+/* STORY SECTION */
+
+.storySection {
+  padding: 100px 8%;
+}
+
+.content {
+  max-width: 1100px;
+  margin: auto;
+  text-align: justify;
+}
+
+.content h2 {
+  font-size: 2.8rem;
+  color: #0f172a;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.08rem;
+  line-height: 2;
+  color: #000;
+  margin-bottom: 25px;
+  max-width: 1000px;
+}
+
+/* STATS SECTION */
+
+.statsSection {
+  width: 90%;
+  max-width: 1300px;
+  padding-bottom: 100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.statCard {
+  background: aquamarine;
+  padding: 40px 25px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-10px);
+}
+
+.statCard h3 {
+  font-size: 3rem;
+  color: blue;
+  margin-bottom: 12px;
+}
+
+.statCard p {
+  color: #000;
+  font-size: 1rem;
+}
+
+/* WHY CHOOSE US */
+
+.teamSection {
+  padding: 100px 8%;
+  background: white;
+}
+
+.teamSection h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #0f172a;
+  margin-bottom: 60px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.featureCard {
+  padding: 35px;
+  border-radius: 22px;
+
+  background: lightskyblue;
+
+  border: 1px solid #e2e8f0;
+
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
+}
+
+.featureCard h3 {
+  margin-bottom: 18px;
+  color: #0f172a;
+  font-size: 1.3rem;
+}
+
+.featureCard p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .heroSection h1 {
+    font-size: 3rem;
+  }
+
+  .heroSection p {
+    font-size: 1.1rem;
+  }
+
+  .statsSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content h2,
+  .teamSection h2 {
+    font-size: 2.3rem;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 90px 20px;
+  }
+
+  .heroSection h1 {
+    font-size: 2.4rem;
+  }
+
+  .heroSection p {
+    font-size: 1rem;
+  }
+
+  .storySection,
+  .teamSection {
+    padding: 70px 5%;
+  }
+
+  .content h2,
+  .teamSection h2 {
+    font-size: 2rem;
+  }
+
+  .statsSection {
+    width: 95%;
+    gap: 18px;
+  }
+
+  .statCard {
+    padding: 30px 20px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .heroSection h1 {
+    font-size: 2rem;
+  }
+
+  .heroSection p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .content h2,
+  .teamSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .statsSection,
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statCard h3 {
+    font-size: 2.3rem;
+  }
+
+  .featureCard {
+    padding: 25px;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+}

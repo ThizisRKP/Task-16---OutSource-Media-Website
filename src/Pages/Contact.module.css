@@ -1,0 +1,174 @@
+.contactContainer {
+  min-height: 100vh;
+}
+
+/* Main Layout */
+
+.contactContent {
+  width: 90%;
+  max-width: 1300px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 120px;
+}
+
+/* Contact Info */
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactInfo h2 {
+  color: #0f172a;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.infoCard {
+  background: aquamarine;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.infoCard h3 {
+  color: darkmagenta;
+  margin-bottom: 10px;
+}
+
+.infoCard p {
+  color: #64748b;
+  line-height: 1.7;
+  color: #000;
+}
+
+#Email,
+#Phone,
+#workingHours,
+#location {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Form */
+
+.contactFormContainer {
+  background: lightskyblue;
+  padding: 35px;
+  border-radius: 22px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contactFormContainer h2 {
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 14px 16px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  font-size: 1rem;
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #2563eb;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactForm button {
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contactForm button:hover {
+  background: #1d4ed8;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 80px 20px;
+  }
+
+  .heroSection h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroSection p {
+    font-size: 1rem;
+  }
+
+  .contactFormContainer {
+    padding: 25px;
+  }
+
+  .infoCard {
+    padding: 20px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .heroSection h1 {
+    font-size: 2rem;
+  }
+
+  .contactContent {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .contactFormContainer {
+    padding: 20px;
+  }
+
+  .contactForm input,
+  .contactForm textarea,
+  .contactForm button {
+    font-size: 0.95rem;
+  }
+}

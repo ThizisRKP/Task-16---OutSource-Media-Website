@@ -1,0 +1,226 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F9DFDF;
+}
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("\src\assets\Hero image.jpg") center/cover no-repeat;
+  border-radius: 20px;
+}
+
+.heroContent {
+  max-width: 850px;
+}
+
+.heroContent h1 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroContent p {
+  color: #FFF;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  max-width: 1200px;
+}
+
+/* REVIEWS SECTION */
+
+.reviewsSection {
+  padding: 80px 5%;
+}
+
+.reviewsSection h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #111827;
+  margin-bottom: 50px;
+}
+
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.reviewCard {
+  background-color: aquamarine;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-6px);
+}
+
+.reviewCard p {
+  color: darkred;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.reviewCard h4 {
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.reviewCard span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* TEAM SECTION */
+
+.teamSection {
+  padding: 80px 5%;
+  background-color: white;
+}
+
+.teamSection h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.teamSection > p {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  color: #000;
+  line-height: 1.8;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.teamCard {
+  background-color: lightskyblue;
+  padding: 25px;
+  text-align: center;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-6px);
+}
+
+.teamCard img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.teamCard h3 {
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.teamCard p {
+  color: #6b7280;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .heroContent h1 {
+    font-size: 2.8rem;
+  }
+
+  .heroContent p {
+    font-size: 1.1rem;
+  }
+
+  .reviewsSection,
+  .teamSection {
+    padding: 60px 4%;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .heroContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .reviewsSection h2,
+  .teamSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .reviewCard,
+  .teamCard {
+    padding: 22px;
+  }
+
+  .teamCard img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .heroContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .heroContent p {
+    font-size: 0.95rem;
+  }
+
+  .reviewsSection,
+  .teamSection {
+    padding: 50px 15px;
+  }
+
+  .reviewGrid,
+  .teamGrid {
+    gap: 18px;
+  }
+
+  .reviewCard,
+  .teamCard {
+    padding: 18px;
+  }
+
+  .teamCard img {
+    width: 90px;
+    height: 90px;
+  }
+}

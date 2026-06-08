@@ -1,0 +1,101 @@
+
+
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Navbar */
+
+.navDiv {
+  width: 98%;
+  max-width: 1480px;
+  margin: 10px auto;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #A8F1FF;
+
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+}
+
+/* Logo */
+
+#Logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Navigation Links */
+
+.navLink {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  color: darkviolet;
+  background-color: rgba(37, 99, 235, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .navDiv {
+    padding: 12px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #Logo {
+    width: 80px;
+  }
+
+  .navLink {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .navDiv {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  #Logo {
+    width: 70px;
+  }
+
+  .navLink {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
