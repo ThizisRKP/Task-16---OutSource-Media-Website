@@ -13,7 +13,7 @@ export default function Services() {
 
   const startIndex = (page - 1) * itemsPerPage;
 
-  const currentServices = services.slice(startIndex, startIndex + itemsPerPage);
+  const currentServices = services.slice(startIndex, startIndex + itemsPerPage); 
 
   const nextImage = (serviceTitle, totalImages) => {
     setImageIndexes((prev) => ({

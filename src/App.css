@@ -1,5 +1,3 @@
-
-
 /* Global */
 
 * {
@@ -19,12 +17,12 @@ body {
 .navDiv {
   width: 98%;
   max-width: 1480px;
-  margin: 10px auto;
+  margin: auto;
   padding: 12px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #A8F1FF;
+  background: #a8f1ff;
 
   backdrop-filter: blur(10px);
   border: 1px solid var(--border-color);
@@ -35,6 +33,42 @@ body {
   z-index: 1000;
 }
 
+/* Navbar Theme */
+
+.navDiv.light {
+  background-color: #a8f1ff;
+}
+
+.navDiv.dark {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+}
+
+.light .navLink {
+  color: #111827;
+}
+
+.dark .navLink {
+  color: #f8fafc;
+}
+
+.light .navLink:hover {
+  color: darkorange;
+
+}
+
+.dark .navLink:hover {
+  color: #38bdf8;
+
+}
+
+.light .themeIcon {
+  color: #111827;
+}
+
+.dark .themeIcon {
+  color: #facc15;
+}
 /* Logo */
 
 #Logo {
@@ -55,10 +89,56 @@ body {
   transition: all 0.3s ease;
 }
 
-.navLink:hover {
-  color: darkviolet;
-  background-color: rgba(37, 99, 235, 0.08);
-  transform: translateY(-2px);
+
+
+/* Theme */
+.appContainer.light {
+  background-color: #f8fafc;
+  color: #111827;
+  min-height: 100vh;
+}
+
+.appContainer.dark {
+  background-color: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+.themeIcons {
+  display: flex;
+  align-items: center;
+}
+
+.themeIcon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.themeIcon:hover {
+  transform: scale(1.1);
+}
+
+.light .themeIcon {
+  color: #111827;
+}
+
+.dark .themeIcon {
+  color: #facc15;
+}
+
+.light {
+  --page-bg: #f9dfdf;
+  --card-bg: white;
+  --text-main: #0f172a;
+  --text-secondary: #334155;
+}
+
+.dark {
+  --page-bg: #0f172a;
+  --card-bg: #1e293b;
+  --text-main: white;
+  --text-secondary: #cbd5e1;
 }
 
 /* Tablet */

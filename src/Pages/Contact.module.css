@@ -1,5 +1,7 @@
 .contactContainer {
   min-height: 100vh;
+  padding: 30px 0;
+  margin-top: 20px;
 }
 
 /* Main Layout */
@@ -22,7 +24,7 @@
 }
 
 .contactInfo h2 {
-  color: #0f172a;
+  color: var(--text-main);
   margin-bottom: 10px;
   margin-left: 5px;
 }
