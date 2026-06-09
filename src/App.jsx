@@ -19,7 +19,11 @@ import "./App.css";
 export default function App() {
   const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-
+  if (menuOpen) {
+    setTimeout(() => {
+      setMenuOpen(false);
+    }, 4000);
+  }
   return (
     <BrowserRouter>
       <div className={`navDiv ${theme}`}>
@@ -29,10 +33,7 @@ export default function App() {
           alt="OutSourse Logo"
         />
 
-        <div
-          className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
 
