@@ -23,12 +23,22 @@ import Staging_04 from "../assets/Staging/Staging_04.jpg";
 import Staging_05 from "../assets/Staging/Staging_05.jpg";
 import Staging_06 from "../assets/Staging/Staging_06.jpg";
 import Staging_07 from "../assets/Staging/Staging_07.jpg";
+// portrait
+import portrait_01 from "../assets/portraits/portrait_01.jpg";
+import portrait_02 from "../assets/portraits/portrait_02.jpg";
+import portrait_03 from "../assets/portraits/portrait_03.jpg";
+import portrait_04 from "../assets/portraits/portrait_04.jpg";
 // Exteriors
 import Ext_01 from "../assets/Exterior/Ext_01.jpg";
 import Ext_02 from "../assets/Exterior/Ext_02.jpg";
 import Ext_03 from "../assets/Exterior/Ext_03.jpg";
 import Ext_04 from "../assets/Exterior/Ext_04.jpg";
 import Ext_05 from "../assets/Exterior/Ext_05.jpg";
+// clipping path
+import clipPath_01 from "../assets/clipping path/c-path_01.jpg";
+import clipPath_02 from "../assets/clipping path/c-path_02.jpg";
+import clipPath_03 from "../assets/clipping path/c-path_03.jpg";
+import clipPath_04 from "../assets/clipping path/c-path_04.png";
 const services = [
   {
     title: "HDR Editing",
@@ -86,44 +96,19 @@ const services = [
   {
     title: "Portrait Photo Editing",
     type: "image",
-    images: [
-      "/portrait1.jpg",
-      "/portrait2.jpg",
-      "/portrait3.jpg",
-      "/portrait4.jpg",
-      "/portrait5.jpg",
-    ],
+    images: [portrait_01, portrait_02, portrait_03, portrait_04],
     description:
       "Professional portrait retouching for real estate agents, teams, and business professionals.",
   },
 
   {
-    title: "Product Paths",
+    title: "Clipping Paths",
     type: "image",
-    images: [
-      "/product1.jpg",
-      "/product2.jpg",
-      "/product3.jpg",
-      "/product4.jpg",
-      "/product5.jpg",
-    ],
+    images: [clipPath_01, clipPath_02, clipPath_03, clipPath_04],
     description:
       "Accurate clipping paths and background isolation for e-commerce and commercial product photography.",
   },
 
-  {
-    title: "Object Removal",
-    type: "image",
-    images: [
-      "/object1.jpg",
-      "/object2.jpg",
-      "/object3.jpg",
-      "/object4.jpg",
-      "/object5.jpg",
-    ],
-    description:
-      "Remove unwanted objects, reflections, wires, and distractions while maintaining a natural appearance.",
-  },
   {
     title: "Exteriors",
     type: "image",
