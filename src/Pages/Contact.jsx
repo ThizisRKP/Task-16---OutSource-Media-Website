@@ -14,7 +14,7 @@ export default function Contact() {
             <h3>Email</h3>
             <div id={styles.Email}>
               <MdEmail className={styles.icon} style={{color:"red"}}/>
-              <p>outsourcemedia@gmail.com</p>
+              <p>outsourcemedia2020@gmail.com</p>
             </div>
           </div>
 
