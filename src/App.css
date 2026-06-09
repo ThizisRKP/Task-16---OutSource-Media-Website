@@ -104,6 +104,12 @@ body {
 .themeIcons {
   display: flex;
   align-items: center;
+  margin-left: 40px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 7px;
+  border: 1px solid #000;
 }
 
 .themeIcon {
@@ -292,6 +298,12 @@ body {
   }
 
   .themeIcons {
-    justify-content: center;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px;
+    border: 1px solid #000;
   }
 }
