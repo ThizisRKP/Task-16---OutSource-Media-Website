@@ -307,3 +307,79 @@ body {
     border: 1px solid #000;
   }
 }
+
+/* Tablet View (769px - 1024px) */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navDiv {
+    padding: 12px 20px;
+  }
+
+  #Logo {
+    width: 90px;
+    margin-left: 0;
+  }
+
+  .navMenu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .navLink {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+    margin-right: 0;
+  }
+
+  .themeIcons {
+    margin-left: 15px;
+    margin-right: 0;
+    padding: 6px;
+  }
+
+  .themeIcon {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Laptop View (1025px - 1440px) */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .navDiv {
+    padding: 15px 30px;
+  }
+
+  #Logo {
+    width: 100px;
+  }
+
+  .navMenu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .navLink {
+    font-size: 1rem;
+    padding: 10px 14px;
+    margin-right: 0;
+  }
+
+  .themeIcons {
+    margin-left: 25px;
+    margin-right: 0;
+  }
+
+  .themeIcon {
+    font-size: 22px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
