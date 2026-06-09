@@ -161,7 +161,8 @@ body {
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
   .navDiv {
-    position: relative;
+    position: sticky;
+    top: 10px;
     justify-content: space-between;
     align-items: center;
   }
@@ -230,6 +231,8 @@ body {
 
 @media (max-width: 768px) {
   .navDiv {
+    position: sticky;
+    top: 10px;
     padding: 12px 20px;
     flex-wrap: wrap;
     gap: 12px;
@@ -247,9 +250,11 @@ body {
 
 @media (max-width: 768px) {
   .navDiv {
-    position: relative;
+    position: sticky;
+    top:10px;
     justify-content: space-between;
     flex-wrap: nowrap;
+
   }
 
   .hamburger {
@@ -313,6 +318,8 @@ body {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .navDiv {
     padding: 12px 20px;
+    position: sticky;
+    top: 10px;
   }
 
   #Logo {
@@ -352,6 +359,8 @@ body {
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .navDiv {
     padding: 15px 30px;
+    position: sticky;
+    top: 10px;
   }
 
   #Logo {
